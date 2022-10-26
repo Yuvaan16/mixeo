@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+        <nav class="fixed w-full bg-white relative">
+            <div class="container m-auto px-6 md:px-12 lg:px-6">
+              <div class="flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0">
+                <div class="w-full flex justify-between lg:w-auto"><a href="index.html" aria-label="logo"><img src="logo.png" class="w-36" alt="mixeo logo" width="144" height="48"></a>
+                    <button aria-label="hamburger" id="hamburger" class="w-10 h-10 mr-2 block md:hidden">
+                    <div aria-hidden="true" id="line" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"></div>
+                    <div aria-hidden="true" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transtion duration-300"></div>
+                    </button></div>
+                <div id="menu" class="w-full md:flex md:items-center md:w-auto bg-white md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent hidden">
+                  <div class="block w-full lg:items-center lg:flex">
+                    <ul class="space-y-6 pb-6 tracking-wide font-medium text-gray-600 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+                      <li><a href="about.html" class="block md:px-3"><span>About Us</span></a></li>
+                      <li><a href="how.html" class="block md:px-3"><span>How it works</span></a></li>
+                      <li><a href="store.html" class="block md:px-3"><span>Mixeo Store</span></a></li>
+                      <li><a href="thrift.html" class="block md:px-3"><span>Mixeo Thrift</span></a></li>
+                      <li><a href="recycle.html" class="block md:px-3"><span>Recycle'em</span></a></li>
+                    </ul>
+                    <ul class="border-t space-y-2 pt-2 lg:space-y-0 lg:space-x-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border-l lg:items-center lg:flex">
+                      <li><a href="sign.html"><button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition active:bg-sky-200 focus:bg-sky-100 sm:w-max"><span class="block text-cyan-600 font-semibold"> Sign in </span></button></a></li>
+                      <li><button type="button" title="Start buying" class="w-full py-3 px-6 rounded-md text-center transition bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 focus:bg-sky-600 sm:w-max"><span class="block text-white font-semibold"> Try it Now </span></button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="pt-32 pb-20 md:pt-40">
+      <div class="container m-auto px-6 md:px-12 lg:px-6">
+        <div class="lg:flex lg:items-center lg:gap-x-16">
+          <div class="space-y-8 lg:w-7/12">
+            <h1 class=" font-bold text-gray-900 text-4xl md:text-5xl">Upload. Select. Generate.</h1>
+            <p class="text-gray-600 lg:w-11/12"> Mixeo allows you to catalogue your clothes and mix and match them to create different ensembles, sparing you the inconvenience of buying new clothes over and over, which helps reduce environmental impact whilst also preventing you from buying new clothes and thereby saving money. </p><span class="block font-semibold">Your Best Companion in Time of Need</span>
+          </div>
+          <div hidden class="lg:block lg:w-5/12"><img src="hero.png" class="w-full" alt="hero img" loading="lazy" width="320" height="280"></div>
+        </div>
+      </div>
+    </div>
+    <div class="py-16 bg-gray-50 overflow-hidden">
+      <div class="container m-auto px-6 space-y-8 text-gray-500 md:px-12">
+        <div><span class="text-gray-600 text-lg font-semibold">Main features</span>
+          <h2 class="mt-4 text-2xl text-gray-900 font-bold md:text-4xl">A technology-first approach to fashion <br class="lg:block" hidden> and clothing</h2>
+        </div>
+        <div class="mt-16 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
+          <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative p-8 space-y-8"><img src="https://cdn-icons-png.flaticon.com/512/4224/4224874.png" class="w-10" width="512" height="512" alt="burger illustration">
+              <div class="space-y-2">
+                <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">Mixeo Store</h5>
+                <p class="text-sm text-gray-600">The Mixeo Store is an online shop where you can get branded clothing at discounted prices</p>
+              </div><a href="store.html" class="flex justify-between items-center group-hover:text-yellow-600"><span class="text-sm">Read more</span><span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span></a>
+            </div>
+          </div>
+          <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative p-8 space-y-8"><img src="https://cdn-icons-png.flaticon.com/512/702/702626.png" class="w-10" width="512" height="512" alt="burger illustration">
+              <div class="space-y-2">
+                <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">Recycle ' em </h5>
+                <p class="text-sm text-gray-600">You can deliver your used clothing to a recycling facility with government certification so that it can be turned into new items and sold in the neighbourhood markets.</p>
+              </div><a href="#" class="flex justify-between items-center group-hover:text-yellow-600"><span class="text-sm">Read more</span><span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span></a>
+            </div>
+          </div>
+          <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+            <div class="relative p-8 space-y-8"><img src="https://cdn-icons-png.flaticon.com/512/5718/5718379.png" class="w-10" width="512" height="512" alt="burger illustration">
+              <div class="space-y-2">
+                <h5 class="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">Mixeo Thrift</h5>
+                <p class="text-sm text-gray-600">The Mixeo Thrift is an online consignment store where you can get used clothing at incredibly low prices without consciously thinking about the quality because every item is put through an 18-step cleaning and quality testing procedure before it leaves the warehouse.</p>
+              </div><a href="#" class="flex justify-between items-center group-hover:text-yellow-600"><span class="text-sm">Read more</span><span class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span></a>
+            </div>
+          </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
