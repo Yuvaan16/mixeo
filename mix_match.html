@@ -15,9 +15,15 @@
        body{
         font-family: 'Raleway', sans-serif;
        }
+       html[data-theme='light'] {
+        --background-color: #fff;
+        --text-color: #121416d8;
+        --link-color: #543fd7;
+      }
      </Style>
 </head>
-<body class="" id="body">
+<body class="bg-gradient-to-b  from-blue-100 to white overflow-x-hidden" style="background-color: #ffffff !important;" id="body">
+
   <header class="p-4  text-gray-800">
     <div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
       <ul class="items-stretch hidden space-x-3 md:flex">
@@ -48,7 +54,7 @@
       </button>
     </div>
   </header>
-  <div class="px-8 py-2 bg-gray-50 text-gray-800">
+  <div class="px-8 py-2  text-gray-800">
 	<div class="flex items-center mx-auto container justify-center md:justify-between py-2">
 		<div>
 			<span>Fetching Clothes from virtual wardrobe &nbsp;</span>
